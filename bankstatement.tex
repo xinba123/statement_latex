@@ -26,6 +26,10 @@
 %% 
 %% This work consists of all files listed in manifest.txt.
 %% 
+
+%%\def\statementperiod{1.2.2017-2.2.2017}
+%%\def\statementnumber{123}
+%%\def\accountnumber{123}
 \documentclass[a4paper,10pt,bic=BYLADEM1ERD,
                iban=DE70753574230240408336,
                holder={Alex},
@@ -40,7 +44,7 @@
 \usepackage{bera}
 \renewcommand\familydefault{\sfdefault}
 \begin{document}
-\bankstatement[statementperiod={20/1/2017-20/2/2017},statementnumber={123},accountnumber={123}]{acx.csv}
+\bankstatement[statementperiod=\statementperiod,statementnumber=\statementnumber,accountnumber=\accountnumber]{acx.csv}
 \end{document}
 \endinput
 %%

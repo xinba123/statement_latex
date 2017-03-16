@@ -94,6 +94,7 @@
 \newcommand*\STM@JK@headingsep{0.5cm}%
 \newcommand*\STM@JK@statementperiodname{Statement Period}%
 \newcommand*\STM@JK@statementnumbername{Statement Number}%
+\newcommand*\STM@JK@accountnumbername{Account Number}%
 \newcommand*\STM@JK@noheader{false}%
 \newcounter{STM@JK@count}%
 \input{\STM@JK@format.def}%
@@ -119,7 +120,9 @@
         \textbf{\STM@JK@statementperiodname}\\%
           {\raggedleft\STM@JK@statementperiod}\\\\%
         \textbf{\STM@JK@statementnumbername}\\%
-          {\raggedleft\STM@JK@statementnumber}%
+          {\raggedleft\STM@JK@statementnumber}\\%
+        \textbf{\STM@JK@accountnumbername}\\%
+          {\raggedleft\STM@JK@accountnumber}%
       \end{tabular}}\\
 
       &\\%
