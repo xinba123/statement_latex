@@ -28,7 +28,5 @@ A list of important files:
 
 	bankstatement.cls: main file for formating the bankstatement
 	Bankstatement.tex: latex file. File to Compile
-	Csv-camt.def: define the structure of the table in the 
-
-statement
+	Csv-camt.def: define the structure of the table in the statement
 
