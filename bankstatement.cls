@@ -19,14 +19,12 @@
 \STM@JK@define@key{STM@JK}{bankstatement}{language}{english}%
 \STM@JK@define@key{STM@JK}{bankstatement}{title}{}%
 \STM@JK@define@key{STM@JK}{bankstatement}{logo}{}%
-\STM@JK@define@key{STM@JK}{bankstatement}{logowidth}{4cm}%
-\STM@JK@define@key{STM@JK}{bankstatement}{holder}{}%
-\STM@JK@define@key{STM@JK}{bankstatement}{bic}{}%
-\STM@JK@define@key{STM@JK}{bankstatement}{iban}{}%
+\STM@JK@define@key{STM@JK}{bankstatement}{logowidth}{6cm}%
 \STM@JK@define@key{STM@JK}{bankstatement}{transactionwidth}{5cm}%
 \STM@JK@define@key{STM@JK}{bankstatement}{negativecolor}{red}%
 \STM@JK@define@key{STM@JK}{bankstatement}{sort}{}%
 \STM@JK@define@key{STM@JK}{bankstatement}{accountnumber}{none}%
+\STM@JK@define@key{STM@JK}{bankstatement}{accountholder}{none}%
 \STM@JK@define@key{STM@JK}{bankstatement}{statementperiod}{none}%
 \STM@JK@define@key{STM@JK}{bankstatement}{statementnumber}{none}%
 \STM@JK@define@key{STM@JK}{bankstatement}{openingbalance}{none}%
@@ -36,9 +34,9 @@
 \STM@JK@define@key{STM@JK}{bankstatement}{top}{2cm}%
 \STM@JK@define@key{STM@JK}{bankstatement}{bottom}{2cm}%
 \DeclareOptionX*{\PassOptionsToClass{\CurrentOption}{article}}%
-\ExecuteOptionsX{format,language,title,logo,logowidth,holder,bic,iban,%
+\ExecuteOptionsX{format,language,title,logo,logowidth,%
                  transactionwidth,negativecolor,sort,openingbalance,%
-                 closingbalance,statementperiod,statementnumber,accountnumber,left,right,top,bottom}%
+                 closingbalance,statementperiod,statementnumber,accountnumber,accountholder,left,right,top,bottom}%
 \ProcessOptionsX*\relax%
 \LoadClass{article}%
 \RequirePackage[left=\STM@JK@left,right=\STM@JK@right,top=\STM@JK@top,%
@@ -51,6 +49,7 @@
 \RequirePackage{datatool}%
 \RequirePackage{calc}%
 \RequirePackage{ifthen}%
+\RequirePackage{color}
 \newcommand*\STM@JK@dbkeys{}%
 \newcommand*\STM@JK@DTLforeach{}%
 \newcommand*\STM@JK@holdername{}%
@@ -89,8 +88,10 @@
     \multicolumn{3}{l}%
       {\begin{tabular}{l}\STM@JK@includelogo\\\STM@JK@address\end{tabular}}%
       \hfill{\begin{tabular}{l}
+
+
         \textbf{\STM@JK@statementperiodname}\\%
-          {\raggedleft\STM@JK@statementperiod}\\\\%
+          {\raggedleft\STM@JK@statementperiod}\\%
         \textbf{\STM@JK@statementnumbername}\\%
           {\raggedleft\STM@JK@statementnumber}\\%
         \textbf{\STM@JK@accountnumbername}\\%
@@ -98,7 +99,7 @@
       \end{tabular}}\\
 
       &\\%
-      \begin{tabular}{l}\textbf{\STM@JK@holdername}\\\STM@JK@holder\end{tabular} &%
+      \begin{tabular}{l}\textbf{\STM@JK@holdername}\\\STM@JK@accountholder\end{tabular} &%
       & %
 
   \end{tabularx}%

@@ -15,7 +15,7 @@
 
 # How to run/compile on windows/linux(ubuntu):
 
-    pdflatex --jobname=bankstatement "\def\statementperiod{1.2.2017-2.2.2017}\def\statementnumber{123}\def\accountnumber{123}\input{bankstatement.tex}"
+    pdflatex --jobname=bankstatement "\def\statementperiod{1.2.2017-2.2.2017}\def\statementnumber{123}\def\accountnumber{123}\def\accountholder{Alex}\def\inputfilename{acx.csv}\input{bankstatement.tex}"
 
 # Input:
 

@@ -27,15 +27,15 @@
 %% This work consists of all files listed in manifest.txt.
 %% 
 
-\def\statementperiod{1.2.2017-2.2.2017}
-\def\statementnumber{123}
-\def\accountnumber{123}
-\documentclass[a4paper,10pt,bic=BYLADEM1ERD,
-               iban=DE70753574230240408336,
-               holder={Alex},
+% \def\statementperiod{1.2.2017-2.2.2017}
+% \def\statementnumber{123}
+% \def\accountnumber{123}
+% \def\inputfilename{c:/acx.csv}
+% \def\accountholder{Alex Xin}
+\documentclass[a4paper,10pt,
                language=english,logo=logofull,
                format=csv-camt,
-               logowidth=4cm,negativecolor=red]
+               logowidth=5cm,negativecolor=red]
               {bankstatement}
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
@@ -44,7 +44,7 @@
 \usepackage{bera}
 \renewcommand\familydefault{\sfdefault}
 \begin{document}
-\bankstatement[statementperiod=\statementperiod,statementnumber=\statementnumber,accountnumber=\accountnumber]{acx.csv}
+\bankstatement[statementperiod=\statementperiod,statementnumber=\statementnumber,accountnumber=\accountnumber,accountholder=\accountholder]{\inputfilename}
 \end{document}
 \endinput
 %%
