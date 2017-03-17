@@ -28,23 +28,23 @@ A list of important files:
 
 	bankstatement.cls: main file for formating the bankstatement
 	Bankstatement.tex: latex file. File to Compile
-	Csv-camt.def: define the structure of the table in the 
+	Csv-camt.def: define the structure of the table in the statement
 
 A list of dependent packages
 
-  longtable
-  tabularx
-  xcolor
-  graphicx
-  booktabs
-  datatool
-  calc
-  ifthen
-  xkeyval
-  xkvltxp
-  babel
-  inputenc
-  fontenc
-  textcomp
+  longtable  
+  tabularx  
+  xcolor  
+  graphicx  
+  booktabs  
+  datatool  
+  calc  
+  ifthen  
+  xkeyval  
+  xkvltxp  
+  babel  
+  inputenc  
+  fontenc  
+  textcomp  
   bera
-  statement
+  
