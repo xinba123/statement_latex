@@ -2,6 +2,17 @@
 
 How to install:
 
+	(1) Install TeX Live 2012
+			sudo add-apt-repository ppa:texlive-backports/ppa 
+			sudo apt-get update 
+			sudo apt-get install texlive
+			
+	(2) Install necessay package
+			tlmgr install datatool
+			tlmgr install xfor
+			tlmgr install substr
+			tlmgr install etoolbox
+
 How to run/compile on windows/linux(ubuntu):
 
     pdflatex --jobname=bankstatement "\def\statementperiod{1.2.2017-2.2.2017}\def\statementnumber{123}\def\accountnumber{123}\input{bankstatement.tex}"

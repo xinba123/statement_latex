@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.5)  17 MAR 2017 10:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.5.5)  17 MAR 2017 17:25
 entering extended mode
 **"E:/blockchain global/small tasks from jin/latex/bankstatement/bankstatement.
 tex"
@@ -813,32 +813,32 @@ Package: beramono 2004/01/31 (WaS)
 )) (bankstatement.aux)
 \openout1 = `bankstatement.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 46.
 
 ("E:\tool\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Try loading font information for T1+fvs on input line 18.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Try loading font information for T1+fvs on input line 46.
 
 ("E:\tool\MiKTeX 2.9\tex\latex\bera\t1fvs.fd"
 File: t1fvs.fd 2004/09/07 scalable font definitions for T1/fvs.
 )
 LaTeX Font Info:    Font shape `T1/fvs/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 18.
+(Font)              scaled to size 8.99994pt on input line 46.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -896,7 +896,7 @@ LaTeX Font Info:    Font shape `T1/fvs/m/n' will be
 <use logofull.png>
 File: logofull.png Graphic file (type png)
  <use logofull.png>
-Package pdftex.def Info: logofull.png used on input line 19.
+Package pdftex.def Info: logofull.png used on input line 47.
 (pdftex.def)             Requested size: 113.81102pt x 39.03668pt.
  [1
 
@@ -905,7 +905,7 @@ ogofull.png>] [2] (bankstatement.aux) )
 Here is how much of TeX's memory you used:
  6804 strings out of 493634
  86579 string characters out of 3147366
- 213616 words of memory out of 3000000
+ 214616 words of memory out of 3000000
  10022 multiletter control sequences out of 15000+200000
  16355 words of font info for 22 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
@@ -913,7 +913,7 @@ Here is how much of TeX's memory you used:
 {E:/tool/MiKTeX 2.9/fonts/enc/dvips/font
 name/8r.enc}<E:/tool/MiKTeX 2.9/fonts/type1/bera/fvsb8a.pfb><E:/tool/MiKTeX 2.9
 /fonts/type1/bera/fvsr8a.pfb>
-Output written on bankstatement.pdf (2 pages, 18257 bytes).
+Output written on bankstatement.pdf (2 pages, 18545 bytes).
 PDF statistics:
  19 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
