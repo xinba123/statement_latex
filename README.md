@@ -1,6 +1,6 @@
 # README #
 
-How to install:
+# How to install:
 
 	(1) Install TeX Live 2012
 			sudo add-apt-repository ppa:texlive-backports/ppa 
@@ -13,11 +13,11 @@ How to install:
 			tlmgr install substr
 			tlmgr install etoolbox
 
-How to run/compile on windows/linux(ubuntu):
+# How to run/compile on windows/linux(ubuntu):
 
     pdflatex --jobname=bankstatement "\def\statementperiod{1.2.2017-2.2.2017}\def\statementnumber{123}\def\accountnumber{123}\input{bankstatement.tex}"
 
-Input:
+# Input:
 
   (1) paraments:	
   
@@ -35,13 +35,13 @@ Output:
      bankstatement.pdf
 
 
-A list of important files:
+# A list of important files:
 
 	bankstatement.cls: main file for formating the bankstatement
 	Bankstatement.tex: latex file. File to Compile
 	Csv-camt.def: define the structure of the table in the statement
 
-A list of dependent packages
+# A list of dependent packages
 
   longtable  
   tabularx  
