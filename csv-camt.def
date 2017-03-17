@@ -1,5 +1,5 @@
 
-\renewcommand*\STM@JK@dbkeys{Type,Date,Debit,Credit,Rate,Fee,Balance}%
+\renewcommand*\STM@JK@dbkeys{Type,Date,Debit,Credit,Balance}%
 \renewcommand*\STM@JK@DTLforeach%
 {%
   \DTLforeach{\STM@JK@dbname}%
@@ -10,12 +10,15 @@
     
     \type & \debit & \credit & \balance %
 
-    \DTLiflastrow{%
-                   \\
-                 }%
-                 {\\ & & \\}%
 
-    \hline\\
+    \ifthenelse{\equal{\date}{Open}}
+    {%
+      \\
+    }%
+    {%
+      \ifthenelse{\equal{\date}{Total}}{\\}{\\\\\hline\\}
+    }%
+
   }%
 }%
 \DTLsetseparator{,}%
