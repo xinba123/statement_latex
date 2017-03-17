@@ -36,7 +36,6 @@
 \renewcommand*\STM@JK@fifthcolumnheading{\bfseries Balance}%
 \renewcommand*\STM@JK@openingbalancename{Opening Balance}%
 \renewcommand*\STM@JK@closingbalancename{Closing Balance}%
-\sisetup{output-decimal-marker={.}}%
 \endinput
 %%
 %% End of file `stmenglish.def'.

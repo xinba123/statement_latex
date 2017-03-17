@@ -1,33 +1,50 @@
 # README #
 
-More and more banks allow their customers to download posting
-records in various formats. By using the `bankstatement` class,
-you can create bank statements - as long as a csv format is
-available! The `csv-mt940` and `csv-camt` formats - used by
-many german Sparkassen - are supported. Moreover, it supports
-`csv-standard-bank-na`!
+How to install:
 
-Furthermore, the following languages are supported: english,
-german, namibian
+How to run/compile on windows/linux(ubuntu):
 
-You can quite easily add support for other languages or csv
-formats. Simply define the order of the keys in the csv data
-file and how to use them.
+    pdflatex --jobname=bankstatement "\def\statementperiod{1.2.2017-2.2.2017}\def\statementnumber{123}\def\accountnumber{123}\input{bankstatement.tex}"
 
-The terminology in this class like `BIC` (Business Identifier
-Codes) or `IBAN` (International Bank Account Number) is based on
-`SEPA` (Single Euro Payments Area). But you can adjust the
-terminology to suit your needs.
+Input:
 
-License: **LPPL**
+  (1) paraments:	
+  
+      jobname: the pdf file name
+      statementperiod: the period when the transactions happened
+      statementnumber: statement number
+      accountnumber: account number
+  (2) csv:
+  
+       A example csv file is acx.csv 
+	
 
-Changes in v0.9.2:
+Output:
 
-* use of `siunitx` to force two decimals, if csv data contains
-  other formats like `16.2 -> 16.20`
+     bankstatement.pdf
 
-* added support for Standard Bank (Namibia) and namibian
 
-feature requests by Dr. Eberhard Lisse
+A list of important files:
 
-* organized package in `dtx` format
+	bankstatement.cls: main file for formating the bankstatement
+	Bankstatement.tex: latex file. File to Compile
+	Csv-camt.def: define the structure of the table in the 
+
+A list of dependent packages
+
+  longtable
+  tabularx
+  xcolor
+  graphicx
+  booktabs
+  datatool
+  calc
+  ifthen
+  xkeyval
+  xkvltxp
+  babel
+  inputenc
+  fontenc
+  textcomp
+  bera
+  statement

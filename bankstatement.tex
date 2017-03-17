@@ -1,0 +1,23 @@
+
+% \def\statementperiod{1.2.2017-2.2.2017}
+% \def\statementnumber{123}
+% \def\accountnumber{123}
+\documentclass[a4paper,10pt,bic=BYLADEM1ERD,
+               iban=DE70753574230240408336,
+               holder={Alex},
+               language=english,logo=logofull,
+               format=csv-camt,
+               logowidth=4cm,negativecolor=red]
+              {bankstatement}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{bera}
+\renewcommand\familydefault{\sfdefault}
+\begin{document}
+\bankstatement[statementperiod=\statementperiod,statementnumber=\statementnumber,accountnumber=\accountnumber]{acx.csv}
+\end{document}
+\endinput
+%%
+%% End of file `bankstatement-example'.

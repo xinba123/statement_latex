@@ -1,31 +1,4 @@
-%%
-%% This is file `bankstatement.cls',
-%% generated with the docstrip utility.
-%%
-%% The original source files were:
-%%
-%% bankstatement.dtx  (with options: `class')
-%% 
-%% Copyright (C) 2015 by:
-%% Josef Kleber
-%% <josef.kleber@gmx.de>
-%% 
-%% This file may be distributed and/or modified under the conditions of
-%% the LaTeX Project Public License, either version 1.3 of this license
-%% or (at your option) any later version.  The latest version of this
-%% license is in:
-%% 
-%%    http://www.latex-project.org/lppl.txt
-%% 
-%% and version 1.3 or later is part of all distributions of LaTeX version
-%% 2003/12/01 or later.
-%% 
-%% This work has the LPPL maintenance status "maintained".
-%% 
-%% The Current Maintainer of this work is Josef Kleber.
-%% 
-%% This work consists of all files listed in manifest.txt.
-%% 
+
 \NeedsTeXFormat{LaTeX2e}%
 \ProvidesClass{bankstatement}[2015/11/14 class for csv based bank statements v0.9.2]%
 \RequirePackage{xkeyval}%
@@ -78,7 +51,6 @@
 \RequirePackage{datatool}%
 \RequirePackage{calc}%
 \RequirePackage{ifthen}%
-\RequirePackage{siunitx}%
 \newcommand*\STM@JK@dbkeys{}%
 \newcommand*\STM@JK@DTLforeach{}%
 \newcommand*\STM@JK@holdername{}%
@@ -94,6 +66,7 @@
 \newcommand*\STM@JK@headingsep{0.5cm}%
 \newcommand*\STM@JK@statementperiodname{Statement Period}%
 \newcommand*\STM@JK@statementnumbername{Statement Number}%
+\newcommand*\STM@JK@accountnumbername{Account Number}%
 \newcommand*\STM@JK@noheader{false}%
 \newcounter{STM@JK@count}%
 \input{\STM@JK@format.def}%
@@ -119,7 +92,9 @@
         \textbf{\STM@JK@statementperiodname}\\%
           {\raggedleft\STM@JK@statementperiod}\\\\%
         \textbf{\STM@JK@statementnumbername}\\%
-          {\raggedleft\STM@JK@statementnumber}%
+          {\raggedleft\STM@JK@statementnumber}\\%
+        \textbf{\STM@JK@accountnumbername}\\%
+          {\raggedleft\STM@JK@accountnumber}%
       \end{tabular}}\\
 
       &\\%
