@@ -25,6 +25,9 @@
       statementperiod: the period when the transactions happened
       statementnumber: statement number
       accountnumber: account number
+      accountholder: account holder
+      inputfilename: input filename
+
   (2) csv:
   
        A example csv file is acx.csv 
