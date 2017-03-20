@@ -21,7 +21,7 @@
 
   (1) paraments:	
   
-      jobname: the pdf file name
+      jobname: the output pdf file name
       statementperiod: the period when the transactions happened
       statementnumber: statement number
       accountnumber: account number
@@ -30,7 +30,7 @@
 
   (2) csv:
   
-       A example csv file is acx.csv 
+       An example csv file is acx.csv
 	
 
 Output:
