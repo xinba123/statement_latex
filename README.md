@@ -22,7 +22,7 @@
   (1) paraments:
   
       halt-on-error -interaction=nonstopmode: continue to run when an error occurs
-      jobname: the output pdf file name(can not be absolute path, all pdf file in the same dir as the tex file)
+      jobname: the output pdf file name(can not be absolute path, all pdf files will be saved in the same dir as the tex file)
       statementperiod: the period when the transactions happened
       statementnumber: statement number
       accountnumber: account number
