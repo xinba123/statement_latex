@@ -2,7 +2,7 @@
 
 # How to install:
 
-	(1) Install TeX Live 2012
+	(1) Install TeX Live 2012(http://askubuntu.com/questions/163682/how-do-i-install-the-latest-tex-live-2012)
 			sudo add-apt-repository ppa:texlive-backports/ppa 
 			sudo apt-get update 
 			sudo apt-get install texlive
