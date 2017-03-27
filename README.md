@@ -15,19 +15,23 @@
 
 # How to run/compile on windows/linux(ubuntu):
 
-    pdflatex --jobname=bankstatement "\def\statementperiod{1.2.2017-2.2.2017}\def\statementnumber{123}\def\accountnumber{123}\def\accountholder{Alex}\def\inputfilename{acx.csv}\input{bankstatement.tex}"
+    pdflatex -halt-on-error -interaction=nonstopmode --jobname=bankstatement "\def\statementperiod{1.2.2017-2.2.2017}\def\statementnumber{123}\def\accountnumber{123}\def\accountholder{Alex}\def\inputfilename{acx.csv}\input{bankstatement.tex}"
 
 # Input:
 
-  (1) paraments:	
+  (1) paraments:
   
-      jobname: the pdf file name
+      halt-on-error -interaction=nonstopmode: continue to run when an error occurs
+      jobname: the output pdf file name
       statementperiod: the period when the transactions happened
       statementnumber: statement number
       accountnumber: account number
+      accountholder: account holder
+      inputfilename: input filename
+
   (2) csv:
   
-       A example csv file is acx.csv 
+       An example csv file is acx.csv
 	
 
 Output:
