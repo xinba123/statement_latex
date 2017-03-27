@@ -13,7 +13,9 @@
 			tlmgr install substr
 			tlmgr install etoolbox
 
-# How to run/compile on windows/linux(ubuntu):
+# How to run on windows/linux(ubuntu):
+
+**IMPORTANT Need to run _twice_ to for [longtable](http://tex.stackexchange.com/questions/163697/table-widths-have-changed-rerun-latex)**
 
     pdflatex -halt-on-error -interaction=nonstopmode --jobname=bankstatement "\def\statementperiod{1.2.2017-2.2.2017}\def\statementnumber{123}\def\accountnumber{123}\def\accountholder{Alex}\def\inputfilename{acx.csv}\input{bankstatement.tex}"
 
