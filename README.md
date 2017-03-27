@@ -22,12 +22,12 @@
   (1) paraments:
   
       halt-on-error -interaction=nonstopmode: continue to run when an error occurs
-      jobname: the output pdf file name
+      jobname: the output pdf file name(can not be absolute path, all pdf file in the same dir as the tex file)
       statementperiod: the period when the transactions happened
       statementnumber: statement number
       accountnumber: account number
       accountholder: account holder
-      inputfilename: input filename
+      inputfilename: input filename(can be absolute path like /root/latex/acx.csv)
 
   (2) csv:
   
