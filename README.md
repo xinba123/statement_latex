@@ -7,7 +7,7 @@
 			sudo apt-get update 
 			sudo apt-get install texlive
 			
-	(2) Install necessay package
+	(2) Install necessay package(tested on my linux VPS)
 			tlmgr install datatool
 			tlmgr install xfor
 			tlmgr install substr
@@ -47,7 +47,7 @@ Output:
 	Bankstatement.tex: latex file. File to Compile
 	Csv-camt.def: define the structure of the table in the statement
 
-# A list of dependent packages
+# A list of dependent packages(Just in case missing packages)
 
   longtable  
   tabularx  
