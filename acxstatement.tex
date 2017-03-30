@@ -1,0 +1,28 @@
+
+% % for testing only
+% \def\statementperiod{1.2.2017-2.2.2017}
+% \def\statementnumber{123}
+% \def\accountnumber{123}
+% \def\inputfilename{acx.csv}
+% \def\accountholder{Alex Xin}
+% \def\addressone{test}
+% \def\addresstwo{test}
+% %
+
+
+\documentclass[a4paper,10pt,
+               language=english,logo=logofull,
+               format=csv-camt,negativecolor=red]
+              {acxstatement}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{bera}
+
+\renewcommand\familydefault{\sfdefault}
+\begin{document}
+\acxstatement[statementperiod=\statementperiod,statementnumber=\statementnumber,accountnumber=\accountnumber,accountholder=\accountholder,addressone=\addressone,addresstwo=\addresstwo]{\inputfilename}
+\end{document}
+\endinput
+

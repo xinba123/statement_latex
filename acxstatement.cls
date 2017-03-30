@@ -1,6 +1,6 @@
 
 \NeedsTeXFormat{LaTeX2e}%
-\ProvidesClass{bankstatement}[2015/11/14 class for csv based bank statements v0.9.2]%
+\ProvidesClass{acxstatement}[2015/11/14 class for csv based bank statements v0.9.2]%
 \RequirePackage{xkeyval}%
 \RequirePackage{xkvltxp}%
 \newcommand*\STM@JK@define@key[4]%
@@ -15,28 +15,30 @@
     \expandafter\def\csname#1@#3\endcsname{##1}%
   }%
 }%
-\STM@JK@define@key{STM@JK}{bankstatement}{format}{csv-camt}%
-\STM@JK@define@key{STM@JK}{bankstatement}{language}{english}%
-\STM@JK@define@key{STM@JK}{bankstatement}{title}{}%
-\STM@JK@define@key{STM@JK}{bankstatement}{logo}{}%
-\STM@JK@define@key{STM@JK}{bankstatement}{logowidth}{6cm}%
-\STM@JK@define@key{STM@JK}{bankstatement}{transactionwidth}{5cm}%
-\STM@JK@define@key{STM@JK}{bankstatement}{negativecolor}{red}%
-\STM@JK@define@key{STM@JK}{bankstatement}{sort}{}%
-\STM@JK@define@key{STM@JK}{bankstatement}{accountnumber}{none}%
-\STM@JK@define@key{STM@JK}{bankstatement}{accountholder}{none}%
-\STM@JK@define@key{STM@JK}{bankstatement}{statementperiod}{none}%
-\STM@JK@define@key{STM@JK}{bankstatement}{statementnumber}{none}%
-\STM@JK@define@key{STM@JK}{bankstatement}{openingbalance}{none}%
-\STM@JK@define@key{STM@JK}{bankstatement}{closingbalance}{none}%
-\STM@JK@define@key{STM@JK}{bankstatement}{left}{1.5cm}%
-\STM@JK@define@key{STM@JK}{bankstatement}{right}{2cm}%
-\STM@JK@define@key{STM@JK}{bankstatement}{top}{2cm}%
-\STM@JK@define@key{STM@JK}{bankstatement}{bottom}{2cm}%
+\STM@JK@define@key{STM@JK}{acxstatement}{format}{csv-camt}%
+\STM@JK@define@key{STM@JK}{acxstatement}{language}{english}%
+\STM@JK@define@key{STM@JK}{acxstatement}{title}{}%
+\STM@JK@define@key{STM@JK}{acxstatement}{logo}{}%
+\STM@JK@define@key{STM@JK}{acxstatement}{logowidth}{4cm}%
+\STM@JK@define@key{STM@JK}{acxstatement}{transactionwidth}{5cm}%
+\STM@JK@define@key{STM@JK}{acxstatement}{negativecolor}{red}%
+\STM@JK@define@key{STM@JK}{acxstatement}{sort}{}%
+\STM@JK@define@key{STM@JK}{acxstatement}{accountnumber}{none}%
+\STM@JK@define@key{STM@JK}{acxstatement}{accountholder}{none}%
+\STM@JK@define@key{STM@JK}{acxstatement}{addressone}{none}%
+\STM@JK@define@key{STM@JK}{acxstatement}{addresstwo}{none}%
+\STM@JK@define@key{STM@JK}{acxstatement}{statementperiod}{none}%
+\STM@JK@define@key{STM@JK}{acxstatement}{statementnumber}{none}%
+\STM@JK@define@key{STM@JK}{acxstatement}{openingbalance}{none}%
+\STM@JK@define@key{STM@JK}{acxstatement}{closingbalance}{none}%
+\STM@JK@define@key{STM@JK}{acxstatement}{left}{1cm}%
+\STM@JK@define@key{STM@JK}{acxstatement}{right}{1cm}%
+\STM@JK@define@key{STM@JK}{acxstatement}{top}{0.5cm}%
+\STM@JK@define@key{STM@JK}{acxstatement}{bottom}{2cm}%
 \DeclareOptionX*{\PassOptionsToClass{\CurrentOption}{article}}%
 \ExecuteOptionsX{format,language,title,logo,logowidth,%
                  transactionwidth,negativecolor,sort,openingbalance,%
-                 closingbalance,statementperiod,statementnumber,accountnumber,accountholder,left,right,top,bottom}%
+                 closingbalance,statementperiod,statementnumber,accountnumber,accountholder,addressone,addresstwo,left,right,top,bottom}%
 \ProcessOptionsX*\relax%
 \LoadClass{article}%
 \RequirePackage[left=\STM@JK@left,right=\STM@JK@right,top=\STM@JK@top,%
@@ -91,25 +93,30 @@
 
 
         \textbf{\STM@JK@statementperiodname}\\%
-          {\raggedleft\STM@JK@statementperiod}\\%
+          {\raggedleft\STM@JK@statementperiod}\\\hline\\%
         \textbf{\STM@JK@statementnumbername}\\%
-          {\raggedleft\STM@JK@statementnumber}\\%
+          {\raggedleft\STM@JK@statementnumber}\\\hline\\%
         \textbf{\STM@JK@accountnumbername}\\%
-          {\raggedleft\STM@JK@accountnumber}%
+          {\raggedleft\STM@JK@accountnumber}\\\hline%
       \end{tabular}}\\
 
       &\\%
-      \begin{tabular}{l}\textbf{\STM@JK@holdername}\\\STM@JK@accountholder\end{tabular} &%
+      \begin{tabular}{l}
+      \\\\\\
+      \hspace*{2cm}\STM@JK@accountholder\\
+      \hspace*{2cm}\STM@JK@addressone\\
+      \hspace*{2cm}\STM@JK@addresstwo
+      \end{tabular} &%
       & %
 
   \end{tabularx}%
   \vspace{\STM@JK@headingsep}%
 }%
 
-\newcommand\bankstatement[2][]%
+\newcommand\acxstatement[2][]%
 {%
   \begingroup%
-    \setkeys{bankstatement}{#1}%
+    \setkeys{acxstatement}{#1}%
     \stepcounter{STM@JK@count}%
     \xdef\STM@JK@dbname{stm\arabic{STM@JK@count}}%
     \ifthenelse{\equal{\STM@JK@noheader}{false}}%
@@ -137,8 +144,7 @@
     \end{longtable}%
   \endgroup%
 }%
-\AtBeginDocument{\disable@keys{bankstatement}%
+\AtBeginDocument{\disable@keys{acxstatement}%
                               {format,language,left,right,top,bottom}}%
 \endinput
-%%
-%% End of file `bankstatement.cls'.
+
