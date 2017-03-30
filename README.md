@@ -40,13 +40,13 @@
 
 Output:
 
-     bankstatement.pdf
+     acxstatement.pdf
 
 
 # A list of important files:
 
-	bankstatement.cls: main file for formating the bankstatement
-	Bankstatement.tex: latex file. File to Compile
+	acxstatement.cls: main file for formating the bankstatement
+	acxstatement.tex: latex file. File to Compile
 	Csv-camt.def: define the structure of the table in the statement
 
 # A list of dependent packages(Just in case missing packages)
